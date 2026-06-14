@@ -106,4 +106,4 @@ This software uses the following open source packages, projects, services or web
 
 ## License
 
-The code in this repository is licensed under the [MIT License](https://mit-license.org/) - see the [`LICENSE`](LICENSE.md) file for details. The transcription of WAN Show and LTT Live Show episodes contains spoken words which are copyright and the individual perspective of their respective speaker. This repository is in no way affiliated with OpenAI, YouTube, Google, or [Terminal.shop](https://terminal.shop).
+The code in this repository is licensed under the [MIT License](https://mit-license.org/) - see the [`LICENSE`](LICENSE.md) file for details. This repository is in no way affiliated with OpenAI, YouTube, Google, or [Terminal.shop](https://terminal.shop).
