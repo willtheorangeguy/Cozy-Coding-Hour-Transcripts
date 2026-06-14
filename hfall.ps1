@@ -7,7 +7,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Continue"
 
 $CurrentYear = 2026
-$RepoId = "All-Level1-Links-With-Friends"
+$RepoId = "All-Cozy-Coding-Hour"
 
 $SuccessColor = "Green"
 $WarningColor = "Yellow"

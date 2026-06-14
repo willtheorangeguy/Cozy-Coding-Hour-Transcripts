@@ -18,7 +18,6 @@ scripts = [
 
 # List of years
 years = [
-    "2025",
     "2026"
 ]
 
