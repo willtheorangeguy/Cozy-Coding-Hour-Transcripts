@@ -1,0 +1,9 @@
+# Core dependencies for Cozy Coding Hour scripts
+yt-dlp
+requests
+openai-whisper
+transformers
+ollama
+language-tool-python
+torch
+mutagen
