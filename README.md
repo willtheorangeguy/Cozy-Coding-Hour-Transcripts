@@ -1,73 +1,70 @@
 <!-- Logo -->
-<h1 align="center">
-  Cozy Coding Hour Transcripts
-</h1>
+<h1 align="center">Cozy Coding Hour Transcripts</h1>
 
 <!-- Copy -->
 <h4 align="center">Transcripts and summaries generated from the Cozy Coding Hour podcast episodes through OpenAI Whisper, Llama 3.1, and LanguageTool.</h4>
 
 <!-- Badges -->
 <div align="center">
-  <!-- Issues -->
   <img alt="GitHub Issues" src="https://img.shields.io/github/issues/willtheorangeguy/Cozy-Coding-Hour-Transcripts">
-  <!-- Pull Requests -->
   <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/willtheorangeguy/Cozy-Coding-Hour-Transcripts">
-  <!-- Discord -->
-  <img alt="Discord Server ID" src="https://img.shields.io/discord/1382526731528962088">
-  <!-- Language Count -->
-  <img alt="GitHub Languages" src="https://img.shields.io/github/languages/count/willtheorangeguy/Cozy-Coding-Hour-Transcripts">
+  <img alt="License" src="https://img.shields.io/github/license/willtheorangeguy/Cozy-Coding-Hour-Transcripts">
 </div>
 
 <!-- Navigation -->
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#documentation">Documentation</a> •
+  <a href="#support">Support</a> •
   <a href="#contributing">Contributing</a> •
-  <a href="#changelog">Changelog</a> •
-  <a href="#credits">Credits & Contributors</a>
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
 </p>
 
 ## Key Features
 
+- Downloads every published episode and converts it to audio.
 - Ability to download all pre-created transcripts.
-- Pull all Cozy Coding Hour episodes, and convert them to audio.
 - Create transcripts for every episode using OpenAI's Whisper.
 - Generate a summary from the transcript using Ollama and Llama.
 - Correct spelling and grammatical errors using LanguageTool.
 
-## How To Use
+## Installation
 
-**To clone and run your own copy of the transcript generator**, you'll need [Git](https://git-scm.com/downloads), [Ollama](https://ollama.com/) and a bunch of Python libraries installed on your computer. If you would rather not use Git, you can just download the code from GitHub [above](https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts/archive/refs/heads/main.zip). From your command line:
+Requires [Python](https://www.python.org/downloads/), [Ollama](https://ollama.com/), and [ffmpeg](https://ffmpeg.org/).
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts.git
-
-# Go into the repository
-$ cd Cozy-Coding-Hour-Transcripts
-
-# Install Dependencies + Run
-$ pip install -r requirements.txt
-$ pip install git+https://github.com/openai/whisper.git
-$ pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-$ python main.py
+git clone https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts.git
+cd Cozy-Coding-Hour-Transcripts
+pip install -r requirements.txt
 ```
 
-If support is required, please open a **[GitHub Discussion](https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts/discussions/new)** or join our **[Discord](https://discord.gg/mgbda4fesN)**.
+Full prerequisites, including GPU-accelerated Whisper, are in [`docs/usage.md`](docs/usage.md).
 
-## Contributing
+## Usage
 
-Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts/compare).
+```bash
+python main.py <year>
+```
+
+That runs the whole pipeline end to end. Episodes live in dated folders at the repository root.
+
+## Documentation
+
+Full documentation lives in [`docs/`](docs/README.md):
+[Quickstart](docs/quickstart.md) · [Installation](docs/installation.md) · [Configuration](docs/configuration.md) · [Architecture](docs/architecture.md) · [Pipeline](docs/pipeline.md) · [FAQ](docs/faq.md) · [Troubleshooting](docs/troubleshooting.md)
 
 Please read [`CONTRIBUTING`](https://github.com/willtheorangeguy/.github/blob/main/CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](https://github.com/willtheorangeguy/.github/blob/main/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
-## Changelog
+Open a [GitHub Discussion](https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts/discussions/new) or file an [issue](https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts/issues/new/choose).
 
-See the [`CHANGELOG`](CHANGELOG.md) file for details.
+## Contributing
+
+Contributions welcome. See the org-wide [Contributing Guide](https://github.com/willtheorangeguy/.github/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/willtheorangeguy/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## Credits
-
-This software uses the following open source packages, projects, services or websites:
 
 <!-- Credits Table -->
 <table>
@@ -94,16 +91,8 @@ This software uses the following open source packages, projects, services or web
   </tr>
 </table>
 
-## Contributors
-
-- [@willtheorangeguy](https://github.com/willtheorangeguy) - Sponsor on [PayPal](https://paypal.me/wvdg44?country.x=CA&locale.x=en_US)
-
-## You may also like...
-
-- [Running Calculator](https://github.com/willtheorangeguy/Running-Calculator) - A running speed calculator for any unit of distance.
-- [Python Logo Widgets](https://github.com/willtheorangeguy/Python-Logo-Widgets) - Python Powered Logo widgets that can be added to any GUI project.
-- [Random Lotto Number Chooser](https://github.com/willtheorangeguy/Random-Lotto-Number-Chooser) - Randomly pick lucky lotto numbers.
-
 ## License
 
-The code in this repository is licensed under the [MIT License](https://mit-license.org/) - see the [`LICENSE`](LICENSE.md) file for details. This repository is in no way affiliated with OpenAI, YouTube, Google, or [Terminal.shop](https://terminal.shop).
+The pipeline code is MIT — see [`LICENSE.md`](LICENSE.md).
+
+**The transcripts are not.** They are machine-generated from recordings of the Cozy Coding Hour podcast episodes, and the words belong to their speakers and rights holders. See [`CONTENT_LICENSE.md`](CONTENT_LICENSE.md) before reusing any of it.
