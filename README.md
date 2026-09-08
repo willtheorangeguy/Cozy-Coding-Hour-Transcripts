@@ -56,7 +56,7 @@ That runs the whole pipeline end to end. Episodes live in dated folders at the r
 Full documentation lives in [`docs/`](docs/README.md):
 [Quickstart](docs/quickstart.md) · [Installation](docs/installation.md) · [Configuration](docs/configuration.md) · [Architecture](docs/architecture.md) · [Pipeline](docs/pipeline.md) · [FAQ](docs/faq.md) · [Troubleshooting](docs/troubleshooting.md)
 
-## Support
+Please read [`CONTRIBUTING`](https://github.com/willtheorangeguy/.github/blob/main/CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](https://github.com/willtheorangeguy/.github/blob/main/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
 Open a [GitHub Discussion](https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts/discussions/new) or file an [issue](https://github.com/willtheorangeguy/Cozy-Coding-Hour-Transcripts/issues/new/choose).
 
